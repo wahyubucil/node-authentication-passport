@@ -7,6 +7,7 @@ const passport = require('passport')
 const session = require('express-session')
 const RedisStore = require('connect-redis')(session)
 
+const config = 
 const app = express()
 
 app.use(bodyParser.urlencoded({
