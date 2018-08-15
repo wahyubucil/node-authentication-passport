@@ -38,4 +38,6 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname))
 
+require('./user').init(app)
+
 module.exports = app
