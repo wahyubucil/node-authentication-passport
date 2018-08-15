@@ -7,6 +7,10 @@ function initUser(app) {
         successRedirect: '/profile',
         failureRedirect: '/'
     }))
+    app.get('/logout', (req, res) => {
+        req.logout()
+        res.redirect('/')
+    })
 }
 
 function renderWelcome(req, res) {
